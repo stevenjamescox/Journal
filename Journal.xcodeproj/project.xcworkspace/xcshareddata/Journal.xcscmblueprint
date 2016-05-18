@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "66DE50DEAA5F137ECA1AC8BB9437E54506037ECE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "94B058D350D09499A060EE903098AA152E04C61F" : 0,
+    "66DE50DEAA5F137ECA1AC8BB9437E54506037ECE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B961EE86-B878-4EF5-A92A-05002AF1C37B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "94B058D350D09499A060EE903098AA152E04C61F" : "",
+    "66DE50DEAA5F137ECA1AC8BB9437E54506037ECE" : "Journal\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Journal",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Journal.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stevenjamescox\/Journal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "66DE50DEAA5F137ECA1AC8BB9437E54506037ECE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stevenjamescox\/Module-8.2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "94B058D350D09499A060EE903098AA152E04C61F"
+    }
+  ]
+}
