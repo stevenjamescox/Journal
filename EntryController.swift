@@ -7,3 +7,26 @@
 //
 
 import Foundation
+
+class EntryController {
+    
+    static let sharedController = EntryController()
+    
+    var entries: [Entry] = []
+    
+    func addEntry(entry: Entry) {
+        entries.append(entry)
+        
+    }
+    
+    func removeEntry(entry: Entry) {
+        
+        if let index = entries.indexOf(entry) {
+            entries.removeAtIndex(index)
+        }
+        
+    }
+    
+    
+    
+}

@@ -15,10 +15,10 @@ class Entry: Equatable {
     let body: String
     
     init(timestamp: NSDate, title: String, body: String){
-    self.timestamp = timestamp
-    self.title = title
-    self.body = body
-    
+        self.timestamp = timestamp
+        self.title = title
+        self.body = body
+        
     }
 }
 
