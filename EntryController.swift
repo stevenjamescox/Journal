@@ -14,17 +14,35 @@ class EntryController {
     
     var entries: [Entry] = []
     
-    func addEntry(entry: Entry) {
-        entries.append(entry)
-        
+    private let keyEntries = "storedEntries"
+    
+    init() {
+        loadFromPersistentStorage()
     }
     
-    func removeEntry(entry: Entry) {
+    // CRUD - create, read, update, delete
+    
+    func addEntry(entry: Entry) {
+        entries.append(entry)
+        saveToPersistentStorage()
+    }
+    
+    func saveToPersistentStorage() {
+        NSUserDefaults.standardUserDefaults().setObject(entries.map{$0.dictionaryCopy}, forKey: keyEntries)
         
+    func removeEntry(entry: Entry) {
         if let index = entries.indexOf(entry) {
             entries.removeAtIndex(index)
+            saveToPersistentStorage()
+            }
         }
-        
+    }
+    
+    func loadFromPersistentStorage() {
+        guard let entriesDictionaryArray = NSUserDefaults.standardUserDefaults().objectForKey(keyEntries) as? [[String:AnyObject]] else {
+            return
+        }
+        entries = entriesDictionaryArray.flatMap{Entry(dictionary: $0)}
     }
     
     

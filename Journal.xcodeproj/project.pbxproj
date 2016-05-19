@@ -16,6 +16,7 @@
 		95B0EED11CED0AF6008D4324 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0EED01CED0AF6008D4324 /* EntryController.swift */; };
 		95B0EED41CED0CE4008D4324 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0EED31CED0CE4008D4324 /* EntryListTableViewController.swift */; };
 		95B0EED71CED15E1008D4324 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0EED61CED15E1008D4324 /* EntryDetailViewController.swift */; };
+		95B0EED91CED2727008D4324 /* DateHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B0EED81CED2727008D4324 /* DateHelp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		95B0EED01CED0AF6008D4324 /* EntryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 		95B0EED31CED0CE4008D4324 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
 		95B0EED61CED15E1008D4324 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		95B0EED81CED2727008D4324 /* DateHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		68816AC61BBB5405000569CE /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				95B0EED81CED2727008D4324 /* DateHelp.swift */,
 				68816AC71BBB5405000569CE /* AppDelegate.swift */,
 				95B0EED21CED0AFE008D4324 /* Model Controllers */,
 				95B0EECF1CED0AB5008D4324 /* Model */,
@@ -297,6 +300,7 @@
 				95B0EECE1CED0AAA008D4324 /* Entry.swift in Sources */,
 				95B0EED41CED0CE4008D4324 /* EntryListTableViewController.swift in Sources */,
 				95B0EED71CED15E1008D4324 /* EntryDetailViewController.swift in Sources */,
+				95B0EED91CED2727008D4324 /* DateHelp.swift in Sources */,
 				68816AC81BBB5405000569CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

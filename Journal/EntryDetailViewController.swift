@@ -8,28 +8,51 @@
 
 import UIKit
 
-class EntryDetailViewController: UIViewController {
-
+class EntryDetailViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var entryTitleTextField: UITextField!
+    @IBOutlet weak var entryBodyTextField: UITextView!
+    
+    var entry: Entry?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        if let entry = entry {
+            updateWithEntry(entry)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    */
-
+    
+    // MARK: - Action Buttons
+    
+    func updateWithEntry(entry: Entry) {
+        self.navigationItem.title = entry.title
+        entryTitleTextField.text = entry.title
+        entryBodyTextField.text = entry.body
+    }
+    
+    @IBAction func clearTextButton(sender: AnyObject) {
+        entryTitleTextField.text = ""
+        entryBodyTextField.text = ""
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    @IBAction func saveButton(sender: AnyObject) {
+        if let entry = entry {
+            entry.title = entryTitleTextField.text ?? ""
+            entry.body = entryBodyTextField.text ?? ""
+            EntryController.sharedController.saveToPersistentStorage()
+        } else {
+            let entry: Entry = Entry(timestamp: NSDate(), title: entryTitleTextField.text ?? "", body: entryBodyTextField.text ?? "")
+            EntryController.sharedController.addEntry(entry)
+        }
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
 }
