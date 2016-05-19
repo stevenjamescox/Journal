@@ -27,15 +27,17 @@ class EntryController {
         saveToPersistentStorage()
     }
     
-    func saveToPersistentStorage() {
-        NSUserDefaults.standardUserDefaults().setObject(entries.map{$0.dictionaryCopy}, forKey: keyEntries)
-        
     func removeEntry(entry: Entry) {
         if let index = entries.indexOf(entry) {
             entries.removeAtIndex(index)
             saveToPersistentStorage()
-            }
         }
+    }
+    
+    
+    func saveToPersistentStorage() {
+        NSUserDefaults.standardUserDefaults().setObject(entries.map{$0.dictionaryCopy}, forKey: keyEntries)
+        
     }
     
     func loadFromPersistentStorage() {
