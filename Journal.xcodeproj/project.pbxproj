@@ -161,8 +161,8 @@
 		95B0EED51CED0CE9008D4324 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				95B0EED61CED15E1008D4324 /* EntryDetailViewController.swift */,
 				95B0EED31CED0CE4008D4324 /* EntryListTableViewController.swift */,
+				95B0EED61CED15E1008D4324 /* EntryDetailViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";

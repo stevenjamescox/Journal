@@ -34,7 +34,6 @@ class EntryController {
         }
     }
     
-    
     func saveToPersistentStorage() {
         NSUserDefaults.standardUserDefaults().setObject(entries.map{$0.dictionaryCopy}, forKey: keyEntries)
         

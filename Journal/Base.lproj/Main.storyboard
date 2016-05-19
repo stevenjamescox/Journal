@@ -47,7 +47,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Journal" id="1tV-lt-BVq">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="CKZ-a8-gb5">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="CKZ-a8-gb5">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addEntryButton:" destination="RGw-as-CHr" id="MmF-dx-oOM"/>
@@ -75,7 +75,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="journal entry title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-wI-Ybt">
                                 <rect key="frame" x="20" y="72" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-F1-EH5">
                                 <rect key="frame" x="247" y="546" width="106" height="34"/>
@@ -88,7 +88,7 @@
                                     <action selector="clearTextButton:" destination="8GI-4W-ag1" eventType="touchUpInside" id="VMW-U5-JES"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AIE-E7-u7t">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AIE-E7-u7t">
                                 <rect key="frame" x="20" y="119" width="560" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -111,7 +111,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rq9-hq-kV8">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="LiT-QO-ORY">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="LiT-QO-ORY">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="saveButton:" destination="8GI-4W-ag1" id="lI3-ud-Im4"/>
@@ -138,6 +138,10 @@
                         <color key="barTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Liv-aU-HUd">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="RGw-as-CHr" kind="relationship" relationship="rootViewController" id="JpO-CC-I2l"/>
                     </connections>

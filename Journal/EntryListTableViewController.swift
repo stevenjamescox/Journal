@@ -50,12 +50,10 @@ class EntryListTableViewController: UITableViewController {
         }
     }
     
-    
     // MARK: - Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toAddEntry" {
-            
         } else if segue.identifier == "toEditEntry" {
             let entryDetailViewController = segue.destinationViewController as? EntryDetailViewController
             if let indexPath = tableView.indexPathForSelectedRow {
