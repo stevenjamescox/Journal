@@ -48,6 +48,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Journal" id="1tV-lt-BVq">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CKZ-a8-gb5">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="addEntryButton:" destination="RGw-as-CHr" id="MmF-dx-oOM"/>
                                 <segue destination="8GI-4W-ag1" kind="show" identifier="toAddEntry" id="7Cs-IT-IJU"/>
@@ -71,7 +72,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="journey entry title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-wI-Ybt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="journal entry title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWj-wI-Ybt">
                                 <rect key="frame" x="20" y="72" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -79,7 +80,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYa-F1-EH5">
                                 <rect key="frame" x="247" y="546" width="106" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Clear All Text"/>
+                                <state key="normal" title="Clear All Text">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clearTextButton:" destination="8GI-4W-ag1" eventType="touchUpInside" id="VMW-U5-JES"/>
                                 </connections>
@@ -91,7 +95,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="TYa-F1-EH5" firstAttribute="centerX" secondItem="cN0-dt-wJc" secondAttribute="centerX" id="0yW-i1-gdK"/>
                             <constraint firstItem="AIE-E7-u7t" firstAttribute="trailing" secondItem="WWj-wI-Ybt" secondAttribute="trailing" id="1DN-CD-fE5"/>
@@ -107,6 +112,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Rq9-hq-kV8">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="LiT-QO-ORY">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="saveButton:" destination="8GI-4W-ag1" id="lI3-ud-Im4"/>
                             </connections>
